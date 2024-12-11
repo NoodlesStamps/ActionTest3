@@ -37,7 +37,7 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          twitch-archiver -D --config-dir ./config/ --archive-only --chat -c ${{ secrets.CH }} -d ./output
+          twitch-archiver  --config-dir ./config --archive-only --chat -c ${{ secrets.CH }} -d ./output
 
 
 
